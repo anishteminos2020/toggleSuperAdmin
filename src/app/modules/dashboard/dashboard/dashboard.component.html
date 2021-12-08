@@ -1,0 +1,448 @@
+<app-frame>
+  <ng-container class="child">
+  <div class="dashboard container-fluid">
+    <div class="row page-wrapper-topbar align-items-center">
+      <div class="col">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Super Admin</a>
+          </li>
+        </ol>
+      </div>
+      <div class="col text-right">
+        <div class="calender-date float-right">
+          <div class="input-group">
+            <input
+              id="txtDate"
+              type="text"
+              class="form-control date-input"
+              readonly="readonly"
+              placeholder="Date"
+            />
+            <label class="input-group-btn" for="txtDate">
+              <span class="calender-icon"
+                ><i class="lni lni-calendar"></i
+              ></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-xl-12 left-sec">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="row">
+                <div class="col">
+                  <div class="icon suppliers text-center">
+                    <i class="lni lni-users"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="content-wrapper">
+                    <h1>5</h1>
+                    <p class="nowrap">Total Customers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="row">
+                <div class="col">
+                  <div class="icon suppliers text-center">
+                    <i class="lni lni-user"></i>
+                    <!-- <i class=" fa fa-user" aria-hidden="true"></i> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="content-wrapper">
+                    <h1>150</h1>
+                    <p class="nowrap">Total Users</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="row">
+                <div class="col">
+                  <div class="icon partners text-center">
+                    <i class="lni lni-graph"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="content-wrapper">
+                    <h1>150</h1>
+                    <p class="nowrap">Total Plans</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="row">
+                <div class="col">
+                  <div class="icon partners text-center">
+                    <i class="lni lni-cart partners"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="content-wrapper">
+                    <h1>150</h1>
+                    <p class="nowrap">Total Billing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="row">
+                <div class="col">
+                  <div class="icon partners text-center">
+                    <i class="lni lni-cart partners"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="content-wrapper">
+                    <h1>150</h1>
+                    <p class="nowrap">Total Client Admin and Users</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="row page-wrapper-topbar align-items-center">
+                <div class="col col-md-12">
+                  <ol class="breadcrumb borderLine">
+                    <li class="breadcrumb-item">Country wise Total Active</li>
+                  </ol>
+                  <button class="refreshBtn">
+                    <i class="fas fa-sync-alt"></i>
+                  </button>
+                  <div class="selectOptionDiv borderLine">
+                    <div class="selectOption">
+                      <span class="redioName">Cuntry</span>
+                      <input
+                        type="radio"
+                        id="favRedio"
+                        name="fav_language"
+                        value=""
+                      />
+                      <select class="selectorBox pr-1"></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 borderLine">
+                  <div id="datatable_filter" class="dataTables_filter">
+                    <label class="d-flex"
+                      >Search:<input
+                        type="search"
+                        class="form-control form-control-sm searchInp"
+                        placeholder=""
+                        aria-controls="datatable"
+                    /></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12">
+                  <table
+                    id="datatable"
+                    class="table datatable-style-1"
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Country wise</th>
+                        <th>Total Active</th>
+                        <th>Toll free number</th>
+                        <th>Virtual Numbers</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="row page-wrapper-topbar align-items-center">
+                <div class="col col-md-12">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item borderLine">
+                      Customer/country wise total(Active Toll free vs
+                      virtual)lines
+                    </li>
+                  </ol>
+                  <button class="refreshBtn">
+                    <i class="fas fa-sync-alt"></i>
+                  </button>
+                  <div class="borderLine">
+                    <div class="redioOption">
+                      <span class="redioName">Customers</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                      <select class="selectorBox">
+                        <!-- <option value="Active Toll free">Active Toll free</option>
+                                <option value="Active virtual">Active virtual</option> -->
+                      </select>
+                      <span class="redioName">Cuntry</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                      <select class="selectorBox"></select>
+                    </div>
+                  </div>
+                  <div class="redioOption borderLine">
+                    <div class="selectItem">
+                      <span class="redioName">select all</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                    </div>
+                    <div class="selectItem">
+                      <span class="redioName">Active line</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                    </div>
+                    <div class="selectItem">
+                      <span class="redioName">Toll free</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                    </div>
+                    <div class="selectItem">
+                      <span class="redioName">virtual</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 borderLine">
+                  <div id="datatable_filter" class="dataTables_filter">
+                    <label class="d-flex"
+                      >Search:<input
+                        type="search"
+                        class="form-control form-control-sm searchInp"
+                        placeholder=""
+                        aria-controls="datatable"
+                    /></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12">
+                  <table
+                    id="datatable"
+                    class="table datatable-style-1"
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Country wise</th>
+                        <th>Total Active</th>
+                        <th>Toll free number</th>
+                        <th>Virtual Numbers</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="row page-wrapper-topbar align-items-center">
+                <div class="col col-md-12">
+                  <ol class="breadcrumb borderLine">
+                    <li class="breadcrumb-item">
+                      Country wise Total (Active,Toll free and Virtual) Numbers
+                    </li>
+                  </ol>
+                  <button class="refreshBtn">
+                    <i class="fas fa-sync-alt"></i>
+                  </button>
+                  <div class="col col-md-6 borderLine">
+                    <div class="selectOptionDiv">
+                      <div class="selectOption">
+                        <span class="redioName">Cuntry</span>
+                        <input
+                          type="radio"
+                          id="favRedio"
+                          name="fav_language"
+                          value=""
+                        />
+                        <select class="selectorBox pr-1"></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 redioOption borderLine">
+                    <div class="selectItem">
+                      <span class="redioName">select all</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                    </div>
+                    <div class="selectItem">
+                      <span class="redioName">Active line</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                    </div>
+                    <div class="selectItem">
+                      <span class="redioName">Toll free</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                    </div>
+                    <div class="selectItem">
+                      <span class="redioName">virtual</span>
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 borderLine">
+                  <div id="datatable_filter" class="dataTables_filter">
+                    <label class="d-flex"
+                      >Search:<input
+                        type="search"
+                        class="form-control form-control-sm searchInp"
+                        placeholder=""
+                        aria-controls="datatable"
+                    /></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12">
+                  <table
+                    id="datatable"
+                    class="table datatable-style-1"
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Country wise</th>
+                        <th>Total Active</th>
+                        <th>Toll free number</th>
+                        <th>Virtual Numbers</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                      <tr>
+                        <td>200 USD</td>
+                        <td>E sim</td>
+                        <td>Rahul Kumar</td>
+                        <td>7835959548</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </ng-container>
+</app-frame>

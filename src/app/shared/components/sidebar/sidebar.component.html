@@ -1,0 +1,234 @@
+<div id="layoutSidenav_nav">
+  <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+    <div class="sb-sidenav-menu">
+      <div class="nav">
+        <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-grid-alt"></i>
+          </div>
+          Dashboard
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <a
+          class="nav-link"
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapseMaster"
+          aria-expanded="false"
+          aria-controls="collapseMaster"
+        >
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-map-marker"></i>
+          </div>
+          Master
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <div
+          class="collapse"
+          id="collapseMaster"
+          data-parent="#sidenavAccordion"
+        >
+          <nav class="sb-sidenav-menu-nested nav">
+            <a
+              class="nav-link"
+              href="#"
+              routerLink="/create-module"
+              routerLinkActive="active"
+              ><i class="lni lni-control-panel"></i>Create Module</a
+            >
+            <a class="nav-link" href="#"
+            routerLink="/create-permission"
+              routerLinkActive="active"
+              ><i class="lni lni-control-panel"></i>Create Permission</a
+            >
+          </nav>
+        </div>
+        <a class="nav-link" href="#">
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-map-marker"></i>
+          </div>
+          Client user and role management
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <a
+          class="nav-link"
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapseCountry"
+          aria-expanded="false"
+          aria-controls="collapseCountry"
+        >
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-map-marker"></i>
+          </div>
+          Toggle User & Role Management
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <div
+          class="collapse"
+          id="collapseCountry"
+          data-parent="#sidenavAccordion"
+        >
+          <nav class="sb-sidenav-menu-nested nav">
+            <a
+              class="nav-link"
+              routerLink="/toggle-user-role-mgmt/roll-management"
+              routerLinkActive="active"
+              ><i class="lni lni-control-panel"></i>Add Roles</a
+            >
+            <a
+              class="nav-link"
+              routerLink="/toggle-user-role-mgmt/user-management"
+              routerLinkActive="active"
+              ><i class="lni lni-control-panel"></i>Add Users</a
+            >
+          </nav>
+        </div>
+        <a
+          class="nav-link collapsed"
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapsePlan"
+          aria-expanded="false"
+          aria-controls="collapsePlan"
+        >
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-graph"></i>
+          </div>
+          Plan Management
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-down"></i>
+          </div>
+        </a>
+        <div class="collapse" id="collapsePlan" data-parent="#sidenavAccordion">
+          <nav class="sb-sidenav-menu-nested nav">
+            <a class="nav-link" href="customer-list.html"
+              ><i class="lni lni-control-panel"></i>Customer List</a
+            >
+            <a class="nav-link" href="kyc-and-plan.html"
+              ><i class="lni lni-control-panel"></i>View KYC & Plan Details</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="lni lni-control-panel"></i>Total customer</a
+            >
+          </nav>
+        </div>
+        <a
+          class="nav-link"
+          href="partners-view.html"
+          data-toggle="collapse"
+          data-target="#collapseAccount"
+          aria-expanded="false"
+          aria-controls="collapseAccount"
+        >
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-users"></i>
+          </div>
+          Account Management
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <div
+          class="collapse"
+          id="collapseAccount"
+          data-parent="#sidenavAccordion"
+        >
+          <nav class="sb-sidenav-menu-nested nav">
+            <a class="nav-link" href="plan-view.html"
+              ><i class="lni lni-control-panel"></i>Plan List</a
+            >
+            <a class="nav-link" href="top-ups.html"
+              ><i class="lni lni-control-panel"></i>Plan cost</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="lni lni-control-panel"></i>Total customer</a
+            >
+          </nav>
+        </div>
+        <a class="nav-link" href="inventory.html">
+          <div class="sb-nav-link-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          Number Management
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <a
+          class="nav-link collapsed"
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapseServiceManagement"
+          aria-expanded="false"
+          aria-controls="collapseServiceManagement"
+        >
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-headphone-alt"></i>
+          </div>
+          Billing and Payment
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-down"></i>
+          </div>
+        </a>
+        <div
+          class="collapse"
+          id="collapseServiceManagement"
+          data-parent="#sidenavAccordion"
+        >
+          <nav class="sb-sidenav-menu-nested nav">
+            <a class="nav-link" href="tickets.html"
+              ><i class="lni lni-ticket"></i>Tickets</a
+            >
+            <a class="nav-link" href="manage-complaints.html"
+              ><i class="lni lni-pencil-alt"></i>Manage Complaints</a
+            >
+            <a class="nav-link" href="manage-sub-complaint.html"
+              ><i class="lni lni-pencil-alt"></i>Manage Sub Complaint</a
+            >
+          </nav>
+        </div>
+        <a class="nav-link" href="logic-box.html">
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-code-alt"></i>
+          </div>
+          Plan Management
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <a class="nav-link" href="suppliers-view.html">
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-network"></i>
+          </div>
+          Ticket List and Support
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <a class="nav-link" href="order-management-view.html">
+          <div class="sb-nav-link-icon">
+            <i class="lni lni-customer"></i>
+          </div>
+          CRM APIs
+          <div class="sb-sidenav-collapse-arrow">
+            <i class="lni lni-chevron-right"></i>
+          </div>
+        </a>
+        <!-- <a class="nav-link" href="inventory-quick-tools.html">
+                        <div class="sb-nav-link-icon"><i class="lni lni-alarm-clock"></i></div>
+                        Inventory Quick tools
+                        <div class="sb-sidenav-collapse-arrow"><i class="lni lni-chevron-right"></i></div>
+                     </a> -->
+      </div>
+    </div>
+  </nav>
+</div>

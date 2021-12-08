@@ -1,0 +1,919 @@
+<app-frame>
+  <ng-container class="child">
+    <div class="container-fluid">
+      <div class="row page-wrapper-topbar align-items-center">
+        <div class="col">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Role Management</li>
+          </ol>
+        </div>
+        <div class="col text-right">
+          <button type="button" class="btn btn-filter" id="filter-btn">
+            <i class="lni lni-funnel"></i>
+            <span class="filter-count">1</span>
+          </button>
+          <div id="dropdown-contentfilter" class="d-none">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 left-side">
+                <div
+                  class="nav flex-column nav-pills"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <a
+                    class="nav-link active"
+                    id="v-pills-poms-tab"
+                    data-toggle="pill"
+                    href="#v-pills-poms"
+                    role="tab"
+                    >Status</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-pomsn-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pomsn"
+                    role="tab"
+                    >Supplier</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-poc-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pomc"
+                    role="tab"
+                    >Country</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-pomr-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pomr"
+                    role="tab"
+                    >Region</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-pomt-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pomt"
+                    role="tab"
+                    >Type</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-pomd-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pomd"
+                    role="tab"
+                    >Data</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-pomv-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pomv"
+                    role="tab"
+                    >Validity</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-pomra-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pomra"
+                    role="tab"
+                    >Rechargable</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-pomup-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pomup"
+                    role="tab"
+                    >Usage Policy</a
+                  >
+                  <a
+                    class="nav-link"
+                    id="v-pills-pombc-tab"
+                    data-toggle="pill"
+                    href="#v-pills-pombc"
+                    role="tab"
+                    >Buying Cost</a
+                  >
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-6 right-side">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="v-pills-poms"
+                    role="tabpanel"
+                  >
+                    <p><input type="radio" name="status" />Active</p>
+                    <p><input type="radio" name="status" />Inactive</p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pomsn" role="tabpanel">
+                    <form>
+                      <input
+                        type="search"
+                        placeholder="Search..."
+                        class="form-control"
+                      />
+                    </form>
+                    <p><input type="checkbox" name="supplier-name" />Ucom</p>
+                    <p><input type="checkbox" name="supplier-name" />Optus</p>
+                    <p><input type="checkbox" name="supplier-name" />Telstra</p>
+                    <p>
+                      <input type="checkbox" name="supplier-name" />Truphone
+                    </p>
+                    <p>
+                      <input type="checkbox" name="supplier-name" />Vodafone
+                    </p>
+                    <p>
+                      <input type="checkbox" name="supplier-name" />T-Mobile
+                    </p>
+                    <p><input type="checkbox" name="supplier-name" />Telstra</p>
+                    <p>
+                      <input type="checkbox" name="supplier-name" />Truphone
+                    </p>
+                    <p><input type="checkbox" name="supplier-name" />Optus</p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pomc" role="tabpanel">
+                    <form>
+                      <input
+                        type="search"
+                        placeholder="Search..."
+                        class="form-control"
+                      />
+                    </form>
+                    <p><input type="checkbox" name="country" />United States</p>
+                    <p><input type="checkbox" name="country" />United States</p>
+                    <p><input type="checkbox" name="country" />United States</p>
+                    <p><input type="checkbox" name="country" />United States</p>
+                    <p><input type="checkbox" name="country" />United States</p>
+                    <p><input type="checkbox" name="country" />United States</p>
+                    <p><input type="checkbox" name="country" />United States</p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pomr" role="tabpanel">
+                    <input
+                      type="search"
+                      placeholder="Search..."
+                      class="form-control"
+                    />
+                    <p><input type="checkbox" name="region" />North America</p>
+                    <p><input type="checkbox" name="region" />North America</p>
+                    <p><input type="checkbox" name="region" />North America</p>
+                    <p><input type="checkbox" name="region" />North America</p>
+                    <p><input type="checkbox" name="region" />North America</p>
+                    <p><input type="checkbox" name="region" />North America</p>
+                    <p><input type="checkbox" name="region" />North America</p>
+                    <p><input type="checkbox" name="region" />North America</p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pomt" role="tabpanel">
+                    <p><input type="radio" name="type" />Local</p>
+                    <p><input type="radio" name="type" />Roaming</p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pomd" role="tabpanel">
+                    <div class="data-range-slider">
+                      <p class="data-range-value">
+                        <input type="text" id="data-amount" readonly />
+                      </p>
+                      <div id="data-slider-range" class="data-range-bar"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pomv" role="tabpanel">
+                    <input
+                      type="search"
+                      placeholder="Search..."
+                      class="form-control"
+                    />
+                    <p><input type="checkbox" name="validity" />7 Days</p>
+                    <p><input type="checkbox" name="validity" />14 Days</p>
+                    <p><input type="checkbox" name="validity" />21 Days</p>
+                    <p><input type="checkbox" name="validity" />28 Days</p>
+                    <p><input type="checkbox" name="validity" />60 Days</p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pomra" role="tabpanel">
+                    <p><input type="radio" name="type" />Rechargable</p>
+                    <p><input type="radio" name="type" />Non-Rechargable</p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pomup" role="tabpanel">
+                    <p><input type="radio" name="usage-policy" />Yes</p>
+                    <p><input type="radio" name="usage-policy" />No</p>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-pombc" role="tabpanel">
+                    <div class="price-range-slider">
+                      <p class="range-value">
+                        <input type="text" id="amount" readonly />
+                      </p>
+                      <div id="slider-range" class="range-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab content -->
+              </div>
+            </div>
+            <hr class="m-0" />
+            <div class="row">
+              <div class="col footer">
+                <button type="button" value="" class="btn btn-link">
+                  Clear All
+                </button>
+                <button type="submit" value="" class="btn theme-btn btn-sm">
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- href="create-new-plan.html" -->
+        <a
+          class="btn theme-btn btnBgBlue"
+          data-bs-toggle="modal"
+          data-bs-target="#addNewRole"
+          >Add New Role
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+          <table
+            id="datatable"
+            class="table datatable-style-1 datatableSize"
+            style="width: 100%"
+          >
+            <thead>
+              <tr>
+                <th>SL.NO</th>
+                <th>ROLE NAME</th>
+                <th>DATE OF CREATION</th>
+                <th>DATE OF MODEFICATION</th>
+                <th>PERMISSION</th>
+                <th>STATUS</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>project manager</td>
+                <td>20-11-21</td>
+                <td>26-11-21</td>
+                <td>
+                  Yes
+                  <button
+                    class="btnView"
+                    data-bs-toggle="modal"
+                    data-bs-target="#permission"
+                  >
+                    View
+                  </button>
+                </td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#tempdeactivated"
+                          href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#GivePermission"
+                          href="#"
+                          ><i class="lni lni-trash"></i>Give Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>super admin</td>
+                <td>04-10-21</td>
+                <td>20-10-21</td>
+                <td>No <button class="btnView">View</button></td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Toggle developer</td>
+                <td>12-08-21</td>
+                <td>20-0-10-21</td>
+                <td>Yes <button class="btnView">View</button></td>
+                <td class="status">
+                  <span class="inactive">Inactive</span>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>project admin</td>
+                <td>05-06-21</td>
+                <td>0021</td>
+                <td>Yes <button class="btnView">View</button></td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Toggle Manager</td>
+                <td>18-08-21</td>
+                <td>19-09-21</td>
+                <td>Yes <button class="btnView">View</button></td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>project manager</td>
+                <td>20-10-21</td>
+                <td>30-11-21</td>
+                <td>Yes <button class="btnView">View</button></td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</app-frame>
+
+<!-- //modal- tempoorary deactiveted // -->
+<div
+  class="modal fade"
+  id="tempdeactivated"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="tempdeactivatedLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content rounded-modal">
+      <div class="modal-header border-bottom-0">
+        <!-- <h5 class="modal-title" id="tempdeactivatedLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body text-center">
+        Your roll is now tempoorary deactivated.
+      </div>
+      <div class="modal-footer border-top-0">
+        <button
+          type="button"
+          class="btn btn-primary btnOksize"
+          data-bs-dismiss="modal"
+        >
+          OK
+        </button>
+        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //modal- permission // -->
+<div
+  class="modal fade"
+  id="permission"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-2"
+  aria-labelledby="permissionLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-modal">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="row page-wrapper-topbar align-items-center">
+              <div class="col col-md-12">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">Roll Name : Manager</li>
+                </ol>
+              </div>
+              <div class="col-sm-12 col-md-12">
+                <div id="datatable_filter" class="dataTables_filter">
+                  <label class="d-flex"
+                    >Search:<input
+                      type="search"
+                      class="form-control form-control-sm searchInp"
+                      placeholder=""
+                      aria-controls="datatable"
+                  /></label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <table
+                  id="datatable"
+                  class="table datatable-style-1 Customerdatatable"
+                  style="width: 100%"
+                >
+                  <thead>
+                    <tr>
+                      <th>Sl No</th>
+                      <th>Roll Name</th>
+                      <th>User's Name</th>
+                      <th>Permission Module</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>E sim</td>
+                      <td>Rahul Kumar</td>
+                      <td>7835959548</td>
+                      <td>E sim</td>
+                      <td class="action">
+                        <div class="dropdown">
+                          <button
+                            class="btn"
+                            type="button"
+                            id="dropdownMenuAction"
+                            data-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <svg
+                              class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fas"
+                              data-icon="ellipsis-h"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                              ></path></svg
+                            ><!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com -->
+                          </button>
+                          <ul
+                            class="dropdown-menu dropdownBox"
+                            aria-labelledby="dropdownMenuAction"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-pencil"></i>Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-trash"></i>Delete</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>E sim</td>
+                      <td>Rahul Kumar</td>
+                      <td>7835959548</td>
+                      <td>E sim</td>
+                      <td class="action">
+                        <div class="dropdown">
+                          <button
+                            class="btn"
+                            type="button"
+                            id="dropdownMenuAction"
+                            data-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <svg
+                              class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fas"
+                              data-icon="ellipsis-h"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                              ></path></svg
+                            ><!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com -->
+                          </button>
+                          <ul
+                            class="dropdown-menu dropdownBox"
+                            aria-labelledby="dropdownMenuAction"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-pencil"></i>Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-trash"></i>Delete</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>E sim</td>
+                      <td>Rahul Kumar</td>
+                      <td>7835959548</td>
+                      <td>E sim</td>
+                      <td class="action">
+                        <div class="dropdown">
+                          <button
+                            class="btn"
+                            type="button"
+                            id="dropdownMenuAction"
+                            data-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <svg
+                              class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fas"
+                              data-icon="ellipsis-h"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                              ></path></svg
+                            ><!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com -->
+                          </button>
+                          <ul
+                            class="dropdown-menu dropdownBox"
+                            aria-labelledby="dropdownMenuAction"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-pencil"></i>Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-trash"></i>Delete</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0">
+          <button
+            type="button"
+            class="btn btn-primary btnOksize"
+            data-bs-dismiss="modal"
+          >
+            OK
+          </button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //modal- permission end // -->
+<!-- // modal Add New Role // -->
+<div
+  class="modal fade"
+  id="addNewRole"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="addNewRoleLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Role</h5>
+        <!-- <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button> -->
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Role Name</label>
+            <input type="text" class="form-control" id="recipient-name" />
+          </div>
+          <div class="mb-3">
+            <label>Module :</label>
+            <select class="form-control"></select>
+          </div>
+          <div class="mb-3">
+            <label>Permission :</label>
+            <select class="form-control"></select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer border-top-0">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // modal Add New Roll end // -->
+<!-- // modal Give Permission  // -->
+<div
+  class="modal fade"
+  id="GivePermission"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="GivePermissionLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="gridModalLabel">Give PermissionLabel</h5>
+      </div>
+      <div class="col col-md-12">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">Roll Name : Manager</li>
+        </ol>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid bd-example-row permisCheckbox">
+          <div class="row permisCheck">
+            <label class="mb-0 mr-2" for="vehicle1"> Only View</label>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          </div>
+          <div class="row permisCheck">
+            <label class="mb-0 mr-2" for="vehicle1"> Addition</label>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          </div>
+          <div class="row permisCheck">
+            <label class="mb-0 mr-2" for="vehicle1"> Modification</label>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          </div>
+          <div class="row permisCheck">
+            <label class="mb-0 mr-2" for="vehicle1"> Delete</label>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          </div>
+
+          <!-- <div class="row">
+                <div class="col-sm-9">
+                  Level 1: .col-sm-9
+                  <div class="row">
+                    <div >Level 2: .col-8 .col-sm-6</div>
+                    <div >Level 2: .col-4 .col-sm-6</div>
+                  </div>
+                </div>
+              </div> -->
+        </div>
+      </div>
+      <div class="modal-footer border-top-0">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          OK
+        </button>
+        <!-- <button type="button" class="btn btn-primary">OK</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // modal Give Permission end  // -->
