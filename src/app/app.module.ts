@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { ToggleUserRoleMgmtModule } from './modules/toggle-user-role-mgmt/toggle-user-role-mgmt.module';
 import { MasterModule } from './modules/master/master.module';
+import { CustomerOrAccountMgmtModule } from './modules/customer-or-account-mgmt/customer-or-account-mgmt.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { SharedModule } from './shared/shared.module';
     DashboardModule,
     ToggleUserRoleMgmtModule,
     MasterModule,
+    CustomerOrAccountMgmtModule,
     SharedModule.forRoot(),
   ],
   providers: [],

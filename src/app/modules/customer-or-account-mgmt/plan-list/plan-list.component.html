@@ -1,1 +1,476 @@
-<p>plan-list works!</p>
+<app-frame>
+  <ng-container class="child">
+    <div class="container-fluid">
+      <div class="row page-wrapper-topbar align-items-center">
+        <div class="col col-md-12">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Plan Details</li>
+          </ol>
+        </div>
+        <div class="col col-md-4 borderLine">
+          <div class="selectOptionDiv">
+            <div class="selectOption">
+              <span class="redioName">All Customer Name</span>
+              <input type="radio" id="favRedio" name="fav_language" value="" />
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 borderLine">
+          <div class="selectOptionDiv">
+            <div class="selectOption">
+              <span class="redioName">Specifice Customer Name</span>
+              <input type="radio" id="favRedio" name="fav_language" value="" />
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4">
+          <select class="selectorBox pr-1"></select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+          <table
+            id=""
+            class="table datatable-style-1 datatableSize"
+            style="width: 100%"
+          >
+            <thead>
+              <tr>
+                <th>SL.NO</th>
+                <th>CUSTOMER NAME</th>
+                <th>PLAN NAME</th>
+                <th>PLAN ACTIVE DATE</th>
+                <th>PLAN EXPIRE DATE</th>
+                <th>PLAN AMOUNT</th>
+                <th>REMINDE DAY'S</th>
+                <th>KYC status</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>RAJU Saha</td>
+                <td>adding</td>
+                <td>02-05-20</td>
+                <td>12-06-21</td>
+                <td>200</td>
+                <td>02-05-21</td>
+                <td class="status">
+                  <a class="" data-bs-toggle="" data-bs-target="#">
+                    <span class="active"
+                      >Active
+                      <!-- <i
+                              class="mt-3 ml-2 fa fa-fw field_icon fa-eye"
+                            ></i> -->
+                    </span>
+                  </a>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          routerLink="/customer-or-account-mgmt/view-plan.component"
+                          routerLinkActive="active"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Subhash Das</td>
+                <td>adding</td>
+                <td>12-05-20</td>
+                <td>20-06-21</td>
+                <td>600</td>
+                <td>22-10-21</td>
+                <td class="status">
+                  <a class="" data-bs-toggle="" data-bs-target="#">
+                    <span class="active"
+                      >Active
+                      <!-- <i
+                              class="mt-3 ml-2 fa fa-fw field_icon fa-eye"
+                            ></i> -->
+                    </span>
+                  </a>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="view-plan-details.html"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Anil Tiwary</td>
+                <td>adding</td>
+                <td>10-11-21</td>
+                <td>09-06-21</td>
+                <td>550</td>
+                <td>30-09-21</td>
+                <td class="status">
+                  <a class="" data-bs-toggle="" data-bs-target="#">
+                    <span class="active"
+                      >Active
+                      <!-- <i
+                              class="mt-3 ml-2 fa fa-fw field_icon fa-eye"
+                            ></i> -->
+                    </span>
+                  </a>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="view-plan-details.html"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>RAJU De</td>
+                <td>Toggle</td>
+                <td>02-05-20</td>
+                <td>12-06-20</td>
+                <td>200</td>
+                <td>02-05-21</td>
+                <td class="status">
+                  <a class="" data-bs-toggle="" data-bs-target="#">
+                    <span class="active"
+                      >Active
+                      <!-- <i
+                              class="mt-3 ml-2 fa fa-fw field_icon fa-eye"
+                            ></i> -->
+                    </span>
+                  </a>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="view-plan-details.html"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Anish De</td>
+                <td>adding</td>
+                <td>30-10-20</td>
+                <td>20-09-21</td>
+                <td>100</td>
+                <td>10-10-20</td>
+                <td class="status">
+                  <a class="" data-bs-toggle="" data-bs-target="#">
+                    <span class="active"
+                      >Active
+                      <!-- <i
+                              class="mt-3 ml-2 fa fa-fw field_icon fa-eye"
+                            ></i> -->
+                    </span>
+                  </a>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="view-plan-details.html"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Raja Banerjee</td>
+                <td>Superaddmin</td>
+                <td>02-05-20</td>
+                <td>12-06-21</td>
+                <td>200</td>
+                <td>02-05-21</td>
+                <td class="status">
+                  <a class="" data-bs-toggle="" data-bs-target="#">
+                    <span class="active"
+                      >Active
+                      <!-- <i
+                              class="mt-3 ml-2 fa fa-fw field_icon fa-eye"
+                            ></i> -->
+                    </span>
+                  </a>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="view-plan-details.html"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>RAJU</td>
+                <td>adding</td>
+                <td>02-05-20</td>
+                <td>12-06-21</td>
+                <td>200</td>
+                <td>02-05-21</td>
+                <td class="status">
+                  <a class="" data-bs-toggle="" data-bs-target="#">
+                    <span class="active"
+                      >Active
+                      <!-- <i
+                              class="mt-3 ml-2 fa fa-fw field_icon fa-eye"
+                            ></i> -->
+                    </span>
+                  </a>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="view-plan-details.html"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>RAJU</td>
+                <td>adding</td>
+                <td>02-05-20</td>
+                <td>12-06-21</td>
+                <td>200</td>
+                <td>02-05-21</td>
+                <td class="status">
+                  <a class="" data-bs-toggle="" data-bs-target="#">
+                    <span class="active"
+                      >Active
+                      <!-- <i
+                              class="mt-3 ml-2 fa fa-fw field_icon fa-eye"
+                            ></i> -->
+                    </span>
+                  </a>
+                </td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="view-plan-details.html"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</app-frame>

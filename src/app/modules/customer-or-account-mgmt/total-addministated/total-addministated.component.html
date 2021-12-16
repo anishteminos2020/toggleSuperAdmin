@@ -2,64 +2,39 @@
   <ng-container class="child">
     <div class="container-fluid">
       <div class="row page-wrapper-topbar align-items-center">
-        <div class="col col-md-12">
+        <div class="col">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item">View KYC Details</li>
+            <li class="breadcrumb-item">Addministated List</li>
           </ol>
-        </div>
-        <div class="col col-md-4 borderLine">
-          <div class="selectOptionDiv">
-            <div class="selectOption">
-              <span class="redioName">All Customer Name</span>
-              <input type="radio" id="favRedio" name="fav_language" value="" />
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 borderLine">
-          <div class="selectOptionDiv">
-            <div class="selectOption">
-              <span class="redioName">Specifice Customer Name</span>
-              <input type="radio" id="favRedio" name="fav_language" value="" />
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4">
-          <select class="selectorBox pr-1"></select>
+          <span>Total Number Of Addministated</span>
         </div>
       </div>
       <div class="row">
         <div class="col-xl-12">
           <table
-            id=""
+            id="datatable"
             class="table datatable-style-1 datatableSize"
             style="width: 100%"
           >
             <thead>
               <tr>
                 <th>SL.NO</th>
-                <th>CUSTOMER NAME</th>
-                <th>KYC Submitted On Customer Date</th>
-                <th>KYC status</th>
+                <th>ADDMINISTATED NAME</th>
+                <th>DATE & TIME OF CREATION</th>
+                <th>ADDMINISTATED PHONE NUMBER</th>
+                <th>ADDMINISTATED EMAIL</th>
+                <th>STATUS</th>
                 <th>ACTION</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>21</td>
-                <td>Ucom</td>
+                <td>1</td>
+                <td>Adrija Paul</td>
+                <td>12-12-21 at 05:30PM</td>
                 <td>Roaming</td>
-                <td class="status">
-                  <a
-                    class="cursor-pointer"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ActiveKycDetailc"
-                  >
-                    <span class="active"
-                      >Active
-                      <i class="mt-3 ml-2 fa fa-fw field_icon fa-eye"></i>
-                    </span>
-                  </a>
-                </td>
+                <td>Rd@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
                 <td class="action">
                   <div class="dropdown">
                     <button
@@ -76,7 +51,11 @@
                       aria-labelledby="dropdownMenuAction"
                     >
                       <li>
-                        <a class="dropdown-item" href="view-kyc-details.html"
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
                           ><i class="lni lni-eye"></i>View</a
                         >
                       </li>
@@ -88,6 +67,11 @@
                       <li>
                         <a class="dropdown-item" href="#"
                           ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
                         >
                       </li>
                     </ul>
@@ -95,21 +79,12 @@
                 </td>
               </tr>
               <tr>
-                <td>21</td>
-                <td>Ucom</td>
+                <td>2</td>
+                <td>Adrija Paul</td>
+                <td>12-12-21 at 05:30PM</td>
                 <td>Roaming</td>
-                <td class="status">
-                  <a
-                    class="cursor-pointer"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ActiveKycDetailc"
-                  >
-                    <span class="active"
-                      >Active
-                      <i class="mt-3 ml-2 fa fa-fw field_icon fa-eye"></i>
-                    </span>
-                  </a>
-                </td>
+                <td>Rd@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
                 <td class="action">
                   <div class="dropdown">
                     <button
@@ -126,7 +101,11 @@
                       aria-labelledby="dropdownMenuAction"
                     >
                       <li>
-                        <a class="dropdown-item" href="view-kyc-details.html"
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
                           ><i class="lni lni-eye"></i>View</a
                         >
                       </li>
@@ -138,6 +117,11 @@
                       <li>
                         <a class="dropdown-item" href="#"
                           ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
                         >
                       </li>
                     </ul>
@@ -145,21 +129,12 @@
                 </td>
               </tr>
               <tr>
-                <td>21</td>
-                <td>Ucom</td>
+                <td>3</td>
+                <td>Adrija Paul</td>
+                <td>12-12-21 at 05:30PM</td>
                 <td>Roaming</td>
-                <td class="status">
-                  <a
-                    class="cursor-pointer"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ActiveKycDetailc"
-                  >
-                    <span class="active"
-                      >Active
-                      <i class="mt-3 ml-2 fa fa-fw field_icon fa-eye"></i>
-                    </span>
-                  </a>
-                </td>
+                <td>Rd@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
                 <td class="action">
                   <div class="dropdown">
                     <button
@@ -176,7 +151,11 @@
                       aria-labelledby="dropdownMenuAction"
                     >
                       <li>
-                        <a class="dropdown-item" href="view-kyc-details.html"
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
                           ><i class="lni lni-eye"></i>View</a
                         >
                       </li>
@@ -188,6 +167,11 @@
                       <li>
                         <a class="dropdown-item" href="#"
                           ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
                         >
                       </li>
                     </ul>
@@ -195,21 +179,12 @@
                 </td>
               </tr>
               <tr>
-                <td>21</td>
-                <td>Ucom</td>
+                <td>4</td>
+                <td>Adrija Paul</td>
+                <td>12-12-21 at 05:30PM</td>
                 <td>Roaming</td>
-                <td class="status">
-                  <a
-                    class="cursor-pointer"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ActiveKycDetailc"
-                  >
-                    <span class="active"
-                      >Active
-                      <i class="mt-3 ml-2 fa fa-fw field_icon fa-eye"></i>
-                    </span>
-                  </a>
-                </td>
+                <td>Rd@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
                 <td class="action">
                   <div class="dropdown">
                     <button
@@ -226,7 +201,11 @@
                       aria-labelledby="dropdownMenuAction"
                     >
                       <li>
-                        <a class="dropdown-item" href="view-kyc-details.html"
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
                           ><i class="lni lni-eye"></i>View</a
                         >
                       </li>
@@ -238,6 +217,11 @@
                       <li>
                         <a class="dropdown-item" href="#"
                           ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
                         >
                       </li>
                     </ul>
@@ -245,21 +229,12 @@
                 </td>
               </tr>
               <tr>
-                <td>21</td>
-                <td>Ucom</td>
+                <td>5</td>
+                <td>Adrija Paul</td>
+                <td>12-12-21 at 05:30PM</td>
                 <td>Roaming</td>
-                <td class="status">
-                  <a
-                    class="cursor-pointer"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ActiveKycDetailc"
-                  >
-                    <span class="active"
-                      >Active
-                      <i class="mt-3 ml-2 fa fa-fw field_icon fa-eye"></i>
-                    </span>
-                  </a>
-                </td>
+                <td>Rd@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
                 <td class="action">
                   <div class="dropdown">
                     <button
@@ -276,7 +251,11 @@
                       aria-labelledby="dropdownMenuAction"
                     >
                       <li>
-                        <a class="dropdown-item" href="view-kyc-details.html"
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
                           ><i class="lni lni-eye"></i>View</a
                         >
                       </li>
@@ -288,6 +267,11 @@
                       <li>
                         <a class="dropdown-item" href="#"
                           ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
                         >
                       </li>
                     </ul>
@@ -295,21 +279,12 @@
                 </td>
               </tr>
               <tr>
-                <td>21</td>
-                <td>Ucom</td>
+                <td>6</td>
+                <td>Adrija Paul</td>
+                <td>12-12-21 at 05:30PM</td>
                 <td>Roaming</td>
-                <td class="status">
-                  <a
-                    class="cursor-pointer"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ActiveKycDetailc"
-                  >
-                    <span class="active"
-                      >Active
-                      <i class="mt-3 ml-2 fa fa-fw field_icon fa-eye"></i>
-                    </span>
-                  </a>
-                </td>
+                <td>Rd@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
                 <td class="action">
                   <div class="dropdown">
                     <button
@@ -326,7 +301,11 @@
                       aria-labelledby="dropdownMenuAction"
                     >
                       <li>
-                        <a class="dropdown-item" href="view-kyc-details.html"
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
                           ><i class="lni lni-eye"></i>View</a
                         >
                       </li>
@@ -338,6 +317,62 @@
                       <li>
                         <a class="dropdown-item" href="#"
                           ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>7</td>
+                <td>Adrija Paul</td>
+                <td>12-12-21 at 05:30PM</td>
+                <td>Roaming</td>
+                <td>Rd@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
                         >
                       </li>
                     </ul>
@@ -345,21 +380,12 @@
                 </td>
               </tr>
               <tr>
-                <td>21</td>
-                <td>Ucom</td>
+                <td>8</td>
+                <td>Adrija Paul</td>
+                <td>12-12-21 at 05:30PM</td>
                 <td>Roaming</td>
-                <td class="status">
-                  <a
-                    class="cursor-pointer"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ActiveKycDetailc"
-                  >
-                    <span class="active"
-                      >Active
-                      <i class="mt-3 ml-2 fa fa-fw field_icon fa-eye"></i>
-                    </span>
-                  </a>
-                </td>
+                <td>Rd@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
                 <td class="action">
                   <div class="dropdown">
                     <button
@@ -376,7 +402,11 @@
                       aria-labelledby="dropdownMenuAction"
                     >
                       <li>
-                        <a class="dropdown-item" href="view-kyc-details.html"
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
                           ><i class="lni lni-eye"></i>View</a
                         >
                       </li>
@@ -390,54 +420,9 @@
                           ><i class="lni lni-trash"></i>Delete</a
                         >
                       </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>21</td>
-                <td>Ucom</td>
-                <td>Roaming</td>
-                <td class="status">
-                  <a
-                    class="cursor-pointer"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ActiveKycDetailc"
-                  >
-                    <span class="active"
-                      >Active
-                      <i class="mt-3 ml-2 fa fa-fw field_icon fa-eye"></i>
-                    </span>
-                  </a>
-                </td>
-                <td class="action">
-                  <div class="dropdown">
-                    <button
-                      class="btn"
-                      type="button"
-                      id="dropdownMenuAction"
-                      data-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuAction"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="view-kyc-details.html"
-                          ><i class="lni lni-eye"></i>View</a
-                        >
-                      </li>
                       <li>
                         <a class="dropdown-item" href="#"
-                          ><i class="lni lni-pencil"></i>Edit</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          ><i class="lni lni-trash"></i>Delete</a
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
                         >
                       </li>
                     </ul>
@@ -451,47 +436,3 @@
     </div>
   </ng-container>
 </app-frame>
-
-<!-- // Active kyc detailc // -->
-<div
-  class="modal fade"
-  id="ActiveKycDetailc"
-  tabindex="-1"
-  aria-labelledby="ActiveKycDetailcLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="ActiveKycDetailcLabel">KYC Details</h5>
-        <!-- <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button> -->
-      </div>
-      <div class="modal-body checActive">
-        <div id="datatable_filter" class="dataTables_filter">
-          <span class="redioName">Pan</span>
-          <input type="checkbox" id="chkgstin" name="chkgstin" />
-        </div>
-        <div id="datatable_filter" class="dataTables_filter">
-          <span class="redioName">GSTIN</span>
-          <input type="checkbox" id="chkgstin" name="chkgstin" />
-        </div>
-        <div id="datatable_filter" class="dataTables_filter">
-          <span class="redioName">Passport</span>
-          <input type="checkbox" id="chkgstin" name="chkgstin" />
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Save
-        </button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-      </div>
-    </div>
-  </div>
-</div>
-<!-- // Active kyc detailc end // -->

@@ -1,1 +1,438 @@
-<p>customer-list works!</p>
+<app-frame>
+  <ng-container class="child">
+    <div class="container-fluid">
+      <div class="row page-wrapper-topbar align-items-center">
+        <div class="col">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Customer List</li>
+          </ol>
+          <span>Total Customer</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+          <table
+            id="datatable"
+            class="table datatable-style-1 datatableSize"
+            style="width: 100%"
+          >
+            <thead>
+              <tr>
+                <th>SL.NO</th>
+                <th>CUSTOMER NAME</th>
+                <th>DATE & TIME OF CREATION</th>
+                <th>CUSTOMER PHONE NUMBER</th>
+                <th>CUSTOMER REGISTER EMAI</th>
+                <th>STATUS</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Rakesh Das</td>
+                <td>20-11-21 at 10:00AM</td>
+                <td>9965359876</td>
+                <td>ad@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Dhananjoy Roy</td>
+                <td>20-11-21 at 10:00AM</td>
+                <td>9965359876</td>
+                <td>ad@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Bumba Thakur</td>
+                <td>20-11-21 at 10:00AM</td>
+                <td>9965359876</td>
+                <td>ad@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Rakesh Das</td>
+                <td>20-11-21 at 10:00AM</td>
+                <td>9965359876</td>
+                <td>ad@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Anish De</td>
+                <td>20-11-21 at 10:00AM</td>
+                <td>9965359876</td>
+                <td>ad@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Rakesh Das</td>
+                <td>20-11-21 at 10:00AM</td>
+                <td>9965359876</td>
+                <td>ad@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>7</td>
+                <td>Sanjoy Roy</td>
+                <td>20-11-21 at 10:00AM</td>
+                <td>9965359876</td>
+                <td>ad@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Mukesh Paul</td>
+                <td>20-11-21 at 10:00AM</td>
+                <td>9965359876</td>
+                <td>ad@gmail.com</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modifyViewCustomerDetails"
+                          href="#"
+                          ><i class="lni lni-eye"></i>View</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Deactivate/Activate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</app-frame>
