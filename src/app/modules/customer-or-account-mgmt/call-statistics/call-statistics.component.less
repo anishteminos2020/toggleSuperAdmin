@@ -1,0 +1,86 @@
+// Color variables (appears count calculates by raw css)
+@color0: #ffffff; // Appears 7 times
+@color1: #0d83da; // Appears 6 times
+@color2: #e21a4f; // Appears 4 times
+
+.list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.list-group-item.noborder {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+.divBox {
+  background: @color0;
+  border: 1px solid rgba(0, 19, 37, 0.08) !important;
+  box-shadow: none !important;
+  height: 9em;
+  margin-left: 0.6rem !important;
+  margin-top: 0.5rem !important;
+  padding: 1.2em 1.2em 1.2em 1.2em;
+  width: 9em;
+}
+.divBox2 {
+  width: 9.2rem !important;
+}
+.divBox > .divBoxInnerRedious {
+  border-radius: 10px !important;
+}
+.divBox > .divBoxInnerRedious > .divBoxImg {
+  border-radius: 14% !important;
+  height: 40px;
+  width: 40px;
+}
+.images {
+  width: 7px !important;
+}
+.btn.btnSize {
+  color: @color0 !important;
+  font-size: 11px !important;
+  padding: 0.2rem 0.6rem !important;
+}
+.btn-danger {
+  background-color: @color2 !important;
+  border-color: @color2 !important;
+  box-shadow: none !important;
+  color: @color0 !important;
+}
+.btn-danger.disabled {
+  background-color: @color2 !important;
+  border-color: @color2 !important;
+  box-shadow: none !important;
+  color: @color0 !important;
+}
+.btn-info {
+  background-color: @color1 !important;
+  border-color: @color1 !important;
+  box-shadow: none !important;
+  color: @color0 !important;
+}
+.btn-info.disabled {
+  &:focus {
+    background-color: @color1 !important;
+    border-color: @color1 !important;
+    box-shadow: none !important;
+    color: @color0 !important;
+  }
+  &:active {
+    background-color: @color1 !important;
+    border-color: @color1 !important;
+    box-shadow: none !important;
+    color: @color0 !important;
+  }
+}
+.divBox,
+.divBox2 {
+  border: 1px solid rgba(0, 19, 37, 0.08) !important;
+  box-shadow: none !important;
+  width: 10rem !important;
+  height: 11.5em;
+  background: #ffffff;
+  padding: 1.2em 1.2em 1.2em 1.2em;
+  margin-top: 0.5rem !important;
+  margin-left: 0.5rem !important;
+}
+.paragraphset {
+  line-height: 28px;
+}
