@@ -11,10 +11,11 @@ import { CreateInvoiceListComponent } from './create-invoice-list/create-invoice
 import { ViewInvoiceListComponent } from './view-invoice-list/view-invoice-list.component';
 import { CreateEmailReminderlistComponent } from './create-email-reminderlist/create-email-reminderlist.component';
 import { ViewEmailReminderlistComponent } from './view-email-reminderlist/view-email-reminderlist.component';
+import { BillingAndPaymentMgmtComponent } from './billing-and-payment-mgmt.component';
 
 
 @NgModule({
-  declarations: [AccountwisePlanListComponent, ViewAccountwisePlanListComponent, PlancostAndTotalBillingComponent, ViewPlancostAndTotalBillingComponent, SearchAccountComponent, CreateInvoiceListComponent, ViewInvoiceListComponent, CreateEmailReminderlistComponent, ViewEmailReminderlistComponent],
+  declarations: [AccountwisePlanListComponent, ViewAccountwisePlanListComponent, PlancostAndTotalBillingComponent, ViewPlancostAndTotalBillingComponent, SearchAccountComponent, CreateInvoiceListComponent, ViewInvoiceListComponent, CreateEmailReminderlistComponent, ViewEmailReminderlistComponent, BillingAndPaymentMgmtComponent],
   imports: [
     CommonModule,
     BillingAndPaymentMgmtRoutingModule

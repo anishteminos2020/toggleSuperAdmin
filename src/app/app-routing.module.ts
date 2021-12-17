@@ -13,6 +13,19 @@ const routes: Routes = [
       "./modules/toggle-user-role-mgmt/toggle-user-role-mgmt.module#ToggleUserRoleMgmtModule",
   },
   {
+    path: "number-mgmt",
+    loadChildren: "./modules/number-mgmt/number-mgmt.module#NumberMgmtModule",
+  },
+  {
+    path: "plan-mgmt",
+    loadChildren: "./modules/plan-mgmt/plan-mgmt.module#PlanMgmtModule",
+  },
+  {
+    path: "billing-and-payment-mgmt",
+    loadChildren:
+      "./modules/billing-and-payment-mgmt/billing-and-payment-mgmt.module#BillingAndPaymentMgmtRoutingModule",
+  },
+  {
     path: "client-user-role-mgmt",
     loadChildren:
       "./modules/client-user-role-mgmt/client-user-role-mgmt.module#ClientUserRoleMgmtModule",

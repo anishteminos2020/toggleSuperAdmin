@@ -8,10 +8,11 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { ViewCustomerListComponent } from './view-customer-list/view-customer-list.component';
 import { BillingInformationComponent } from './billing-information/billing-information.component';
 import { ViewBillingComponent } from './view-billing/view-billing.component';
+import { PlanMgmtComponent } from './plan-mgmt/plan-mgmt.component';
 
 
 @NgModule({
-  declarations: [PlanListComponent, AddPlanComponent, CustomerListComponent, ViewCustomerListComponent, BillingInformationComponent, ViewBillingComponent],
+  declarations: [PlanListComponent, AddPlanComponent, CustomerListComponent, ViewCustomerListComponent, BillingInformationComponent, ViewBillingComponent, PlanMgmtComponent],
   imports: [
     CommonModule,
     PlanMgmtRoutingModule
