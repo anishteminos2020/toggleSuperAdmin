@@ -6,12 +6,14 @@ import { ToggleUserRoleMgmtRoutingModule } from './toggle-user-role-mgmt-routing
 import { SharedModule } from 'src/app/shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { ToggleUserRoleMgmtComponent } from './toggle-user-role-mgmt/toggle-user-role-mgmt.component';
+import { AddNewUserComponent } from './add-new-user/add-new-user.component';
 
 @NgModule({
   declarations: [
     RollManagementComponent,
     UserManagementComponent,
     ToggleUserRoleMgmtComponent,
+    AddNewUserComponent,
   ],
   imports: [
     CommonModule,
