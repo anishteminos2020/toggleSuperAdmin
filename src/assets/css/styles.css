@@ -10882,26 +10882,6 @@ body {
   outline: none;
 }
 
-.refreshBtn {
-  border: none;
-  outline: none;
-  font-size: 14px;
-  background-color: transparent;
-  width: 30px;
-  height: 26px;
-  text-align: center;
-  line-height: 26px;
-  position: absolute;
-  right: 10px;
-  top: 15px;
-}
-
-.refreshBtn:hover {
-  background-color: #0d83da !important;
-  transition: 0.4s;
-  border-radius: 6px;
-}
-
 .selectItem {
   text-align: center;
 }

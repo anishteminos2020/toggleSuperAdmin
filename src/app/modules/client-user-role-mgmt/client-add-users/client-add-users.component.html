@@ -1,1 +1,443 @@
-<p>client-add-users works!</p>
+<app-frame>
+  <ng-container class="child">
+    <div class="container-fluid">
+      <div class="row page-wrapper-topbar align-items-center">
+        <div class="col">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Client User's Management</li>
+          </ol>
+        </div>
+        <a
+          routerLink="/toggle-user-role-mgmt/add-new-user"
+          routerLinkActive="active"
+          class="btn theme-btn btnBgBlue"
+          >Add New User
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+          <table
+            id="datatable"
+            class="table datatable-style-1 datatableSize"
+            style="width: 100%"
+          >
+            <thead>
+              <tr>
+                <th>Sl No</th>
+                <th>Roll Name</th>
+                <th>User's Name</th>
+                <th>Email Id</th>
+                <th>Permission Module</th>
+                <th>Date Of Creation</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>project manager</td>
+                <td>Rajesh Roy</td>
+                <td>rr@gmail.com</td>
+                <td class="status">
+                  <!-- <span class="active">Yes</span> -->
+                  <a
+                    class=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#permission"
+                  >
+                    <span class="active"
+                      >Yes<i
+                        class="mt-3 ml-2 fa fa-fw field_icon fa-eye-slash"
+                      ></i
+                    ></span>
+                  </a>
+                </td>
+                <td>221 GB</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#tempdeactivated"
+                          href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Give Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>super admin</td>
+                <td>Adrija Paul</td>
+                <td>ap@gmail.com</td>
+                <td class="status">
+                  <!-- <span class="active">Yes</span> -->
+                  <a
+                    class=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#permission"
+                  >
+                    <span class="active"
+                      >Yes<i
+                        class="mt-3 ml-2 fa fa-fw field_icon fa-eye-slash"
+                      ></i
+                    ></span>
+                  </a>
+                </td>
+                <td>221 GB</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#tempdeactivated"
+                          href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Give Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Toggle developer</td>
+                <td>Amit Mahata</td>
+                <td>rr@gmail.com</td>
+                <td class="status">
+                  <!-- <span class="active">Yes</span> -->
+                  <a
+                    class=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#permission"
+                  >
+                    <span class="active"
+                      >Yes<i
+                        class="mt-3 ml-2 fa fa-fw field_icon fa-eye-slash"
+                      ></i
+                    ></span>
+                  </a>
+                </td>
+                <td>221 GB</td>
+                <td class="status"><span class="active">Active</span></td>
+                <td class="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuAction"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuAction"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#tempdeactivated"
+                          href="#"
+                          ><i class="lni lni-eye"></i>Temp Deactivate</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-pencil"></i>Edit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Delete</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="lni lni-trash"></i>Give Permission</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</app-frame>
+
+<!-- //modal- tempoorary deactiveted // -->
+<div
+  class="modal fade"
+  id="tempdeactivated"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="tempdeactivatedLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content rounded-modal">
+      <div class="modal-header border-bottom-0">
+        <!-- <h5 class="modal-title" id="tempdeactivatedLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body text-center">
+        Your roll is now tempoorary deactivated.
+      </div>
+      <div class="modal-footer border-top-0">
+        <button
+          type="button"
+          class="btn btn-primary btnOksize"
+          data-bs-dismiss="modal"
+        >
+          OK
+        </button>
+        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //modal- tempoorary deactiveted end // -->
+<!-- //modal- permission // -->
+<div
+  class="modal fade"
+  id="permission"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-2"
+  aria-labelledby="permissionLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-modal">
+        <div class="col-md-12">
+          <div class="row page-wrapper-topbar align-items-center bord_ln">
+            <div class="col col-md-12">
+              <ol class="breadcrumb flex-column">
+                <li>Roll Name : Manager</li>
+                <li>User Name : Anish de</li>
+              </ol>
+            </div>
+            <div class="col-sm-12 col-md-12">
+              <div id="datatable_filter" class="dataTables_filter">
+                <label class="d-flex"
+                  >Search:<input
+                    type="search"
+                    class="form-control form-control-sm searchInp"
+                    placeholder=""
+                    aria-controls="datatable"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <div class="col-xl-12">
+                <table
+                  id="datatable"
+                  class="table datatable-style-1 Customerdatatable"
+                  style="width: 100%"
+                >
+                  <thead>
+                    <tr>
+                      <th>Sl No</th>
+                      <th>Roll Name</th>
+                      <th>User's Name</th>
+                      <th>Permission Module</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Manager</td>
+                      <td>Anish De</td>
+                      <td>Permission Module</td>
+                      <td>Active</td>
+                      <td class="action">
+                        <div class="dropdown">
+                          <button
+                            class="btn"
+                            type="button"
+                            id="dropdownMenuAction"
+                            data-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <svg
+                              class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fas"
+                              data-icon="ellipsis-h"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                              ></path>
+                            </svg>
+                            <!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com -->
+                          </button>
+                          <ul
+                            class="dropdown-menu dropdownBox"
+                            aria-labelledby="dropdownMenuAction"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-pencil"></i>Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-trash"></i>Delete</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Toggle Admin</td>
+                      <td>Rahul Kumar</td>
+                      <td>View Module</td>
+                      <td>Active</td>
+                      <td class="action">
+                        <div class="dropdown">
+                          <button
+                            class="btn"
+                            type="button"
+                            id="dropdownMenuAction"
+                            data-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <svg
+                              class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fas"
+                              data-icon="ellipsis-h"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512"
+                              data-fa-i2svg=""
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                              ></path></svg
+                            ><!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com -->
+                          </button>
+                          <ul
+                            class="dropdown-menu dropdownBox"
+                            aria-labelledby="dropdownMenuAction"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-pencil"></i>Edit</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="lni lni-trash"></i>Delete</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0">
+          <button
+            type="button"
+            class="btn btn-primary btnOksize"
+            data-bs-dismiss="modal"
+          >
+            OK
+          </button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //modal- permission end // -->
