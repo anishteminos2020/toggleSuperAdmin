@@ -143,34 +143,20 @@
                         <input type="radio" id="html" name="filter" value="" />
                       </div>
                       <div class="selectItem form-control-sm">
-                        <span class="redioName ">Status</span>
+                        <span class="redioName ">Country</span>
                         <input
                           type="radio"
                           id="html"
                           name="countryOptions"
                           value=""
                         />
-                        <select name="cars" id="cars" class="selectorBox pr-1 form-control-sm ml-1">
-                          <option value="Active">Active</option>
-                          <option value="Deactive">Deactive</option>
-                          <option value="Waiting for KYC">Waiting for KYC</option>
+                        <select name="country" id="country" class="selectorBox pr-1 form-control-sm ml-1">
+                          <option value="1">India</option>
+                          <option value="2">Austria</option>
+                          <option value="3">Bangladesh</option>
                         </select>
                       </div>
-                    </div>
-                    <div class="selectOptionDiv borderLine">
-                      <div class="selectOption">
-                        <span class="redioName form-control-sm">Country</span>
-                        <!-- <input
-                        type="radio"
-                        id="favRedio"
-                        name="fav_language"
-                        value=""
-                      /> -->
-                        <select
-                          class="selectorBox pr-1 form-control-sm"
-                        ></select>
-                      </div>
-                    </div>
+                    </div>                   
                   </div>
                   <div class="col-sm-12 col-md-12 borderLine d-flex">
                     <div id="datatable_filter" class="dataTables_filter">
@@ -244,6 +230,36 @@
                   <div class="col col-md-12">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item borderLine custo-size">
+                       country wise total(Active Tollfree vs Virtual)lines statistics
+                      </li>
+                    </ol>                    
+                  </div>                  
+                </div>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="active_count">
+                      <apx-chart
+                      [series]="chartOptions.series"
+                      [chart]="chartOptions.chart"
+                      [xaxis]="chartOptions.xaxis"
+                      [yaxis]="chartOptions.yaxis"
+                      [markers]="chartOptions.markers"
+                      [dataLabels]="chartOptions.dataLabels"
+                      [grid]="chartOptions.grid"
+                      [stroke]="chartOptions.stroke"
+                      [title]="chartOptions.title"
+                    ></apx-chart>
+                    </div>                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="row page-wrapper-topbar align-items-center">
+                  <div class="col col-md-12">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item borderLine custo-size">
                         Customer/country wise total(Active Tollfree vs
                         Virtual)lines
                       </li>
@@ -272,21 +288,7 @@
                       <div class="selectItem form-control-sm">
                         <span class="redioName nowrap">Virtual</span>
                         <input type="radio" id="html" name="filter" value="" />
-                      </div>
-                      <div class="selectItem form-control-sm">
-                        <span class="redioName">Status</span>
-                        <input
-                          type="radio"
-                          id="html"
-                          name="countryOptions"
-                          value=""
-                        />
-                        <select name="cars" id="cars" class="selectorBox pr-1 form-control-sm ml-1">
-                          <option value="Active">Active</option>
-                          <option value="Deactive">Deactive</option>
-                          <option value="Waiting for KYC">Waiting for KYC</option>
-                        </select>
-                      </div>
+                      </div>                     
                     </div>
                     <div class="borderLine">
                       <div class="redioOption">
@@ -300,7 +302,11 @@
                           />
                           <select
                             class="ml-2 selectorBox form-control-sm"
-                          ></select>
+                          >
+                          <option value="1">Anish De</option>
+                          <option value="2">Rahul</option>
+                          <option value="3">Adrija Khan</option>
+                        </select>
                         </div>
                         <div class="sel-opt">
                           <span class="ml-2 form-control-sm">Country</span>
@@ -312,7 +318,11 @@
                           />
                           <select
                             class="ml-2 selectorBox form-control-sm"
-                          ></select>
+                          >
+                          <option value="1">India</option>
+                          <option value="2">Austria</option>
+                          <option value="3">Bangladesh</option>
+                        </select>
                         </div>
                       </div>
                     </div>
@@ -376,7 +386,7 @@
                         <tr>
                           <td>3</td>
                           <td>Bangladesh</td>
-                          <td>Adrija</td>
+                          <td>Adrija Khan</td>
                           <td>10</td>
                           <td>20</td>
                         </tr>
@@ -386,7 +396,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-12">
+            
+           
+            <div class="col-md-6">
               <div class="card">
                 <div class="row page-wrapper-topbar align-items-center">
                   <div class="col col-md-12">
@@ -398,9 +410,9 @@
                     <button class="refreshBtn">
                       <i class="fas fa-sync-alt"></i>
                     </button>
-                    <div class="col col-md-12 borderLine">
+                    <div class="col-md-12 borderLine">
                       <div class="row">
-                        <div class="col-md-6 redioOption">
+                        <div class="redioOption">
                           <div class="selectItem">
                             <span class="redioName form-control-sm nowrap"
                               >Select all</span
@@ -452,7 +464,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col col-md-6">
+                        <div class="col-md-12">
                           <div class="selectOptionDiv">
                             <div class="selectOption">
                               <span class="redioName form-control-sm"
@@ -466,7 +478,11 @@
                               />
                               <select
                                 class="selectorBox pr-1 form-control-sm ml-1"
-                              ></select>
+                              >
+                              <option value="1">Anish De</option>
+                              <option value="2">Rahul</option>
+                              <option value="3">Adrija Khan</option>
+                            </select>
                             </div>
                           <!-- </div>
                           <div class="selectOptionDiv"> -->
@@ -482,11 +498,14 @@
                               />
                               <select
                                 class="selectorBox pr-1 form-control-sm ml-1"
-                              ></select>
+                              >
+                              <option value="1">India</option>
+                              <option value="2">Austria</option>
+                              <option value="3">Bangladesh</option>
+                            </select>
                             </div>
                           </div>
-                        </div>
-                        
+                        </div>                        
                       </div>
                     </div>
                   </div>
@@ -537,7 +556,7 @@
                           <td>Anish De</td>
                           <td>9148567325</td>
                           <td>8826549874</td>
-                          <td>Active</td>
+                          <td style="color:#008000; font-weight: 600; font-size: 14px;">Active</td>
                         </tr>
                         <tr>
                           <td>2</td>
@@ -545,7 +564,7 @@
                           <td>Rahul</td>
                           <td>9862456782</td>
                           <td>7835959548</td>
-                          <td>Deactive</td>
+                          <td style="color:#DC143C; font-weight: 600; font-size: 14px;">Deactive</td>
                         </tr>
                         <tr>
                           <td>3</td>
@@ -553,7 +572,7 @@
                           <td>Adrija Khan</td>
                           <td>8978659866</td>
                           <td>0955786598</td>
-                          <td>Waiting for KYC</td>
+                          <td style="color:#dba308; font-weight: 600; font-size: 14px;">Waiting for KYC</td>
                         </tr>
                       </tbody>
                     </table>

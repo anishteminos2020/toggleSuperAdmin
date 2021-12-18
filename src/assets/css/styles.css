@@ -10878,8 +10878,10 @@ body {
 .selectorBox {
   height: 25px;
   width: 140px;
-  padding: 10px;
-  outline: none;
+  padding: 0px;
+  outline: none !important;
+  font-size: 13px;
+  text-align: justify;
 }
 
 .selectItem {
