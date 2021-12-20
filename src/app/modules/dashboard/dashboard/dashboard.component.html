@@ -225,18 +225,27 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card">
-                <div class="row page-wrapper-topbar align-items-center">
-                  <div class="col col-md-12">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item borderLine custo-size">
-                       country wise total(Active Tollfree vs Virtual)lines statistics
-                      </li>
-                    </ol>                    
-                  </div>                  
+              <div class="card">                
+                <div class="card-header pb-2">
+                  <h6 class="card-title">country wise total(Active Tollfree vs Virtual)Numbers statistics Yearly</h6>
+                  <div class="d-flex bd-highlight flex-wrap">
+                    <div class="p-2 bd-highlight">Select Year</div>
+                    <div class="p-2 bd-highlight"> 
+                      <select class="ml-2 selectorBox form-select form-select-sm">
+                        <option value="1">1999</option>
+                        <option value="2">2020</option>
+                        <option value="3" selected>2021</option>
+                      </select>
+                    </div>
+                    <div class="p-1 bd-highlight mt-0">
+                      <button type="submit" class="btn btn-secondary btn-sm">
+                        GENERATE
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="row">
-                  <div class="col-xl-12">
+                <div class="card-body p-1">
+                  <div class="">
                     <div class="active_count">
                       <apx-chart
                       [series]="chartOptions.series"
@@ -254,285 +263,39 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="card">
-                <div class="row page-wrapper-topbar align-items-center">
-                  <div class="col col-md-12">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item borderLine custo-size">
-                        Customer/country wise total(Active Tollfree vs
-                        Virtual)lines
-                      </li>
-                    </ol>
-                    <button class="refreshBtn">
-                      <i class="fas fa-sync-alt"></i>
-                    </button>
-                    <div class="redioOption borderLine">
-                      <div class="selectItem form-control-sm">
-                        <span class="redioName nowrap">Select all</span>
-                        <input type="radio" id="html" name="filter" value="" />
-                      </div>
-                      <!-- <div class="selectItem form-control-sm">
-                      <span class="redioName">Active line</span>
-                      <input
-                        type="radio"
-                        id="html"
-                        name="filter"
-                        value=""
-                      />
-                    </div> -->
-                      <div class="selectItem form-control-sm">
-                        <span class="redioName nowrap">Tollfree</span>
-                        <input type="radio" id="html" name="filter" value="" />
-                      </div>
-                      <div class="selectItem form-control-sm">
-                        <span class="redioName nowrap">Virtual</span>
-                        <input type="radio" id="html" name="filter" value="" />
-                      </div>                     
-                    </div>
-                    <div class="borderLine">
-                      <div class="redioOption">
-                        <div class="sel-opt">
-                          <span class="form-control-sm">Customers</span>
-                          <input
-                            type="radio"
-                            id="html"
-                            name="fav_language"
-                            value=""
-                          />
-                          <select
-                            class="ml-2 selectorBox form-control-sm"
-                          >
-                          <option value="1">Anish De</option>
-                          <option value="2">Rahul</option>
-                          <option value="3">Adrija Khan</option>
-                        </select>
-                        </div>
-                        <div class="sel-opt">
-                          <span class="ml-2 form-control-sm">Country</span>
-                          <input
-                            type="radio"
-                            id="html"
-                            name="fav_language"
-                            value=""
-                          />
-                          <select
-                            class="ml-2 selectorBox form-control-sm"
-                          >
-                          <option value="1">India</option>
-                          <option value="2">Austria</option>
-                          <option value="3">Bangladesh</option>
-                        </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 borderLine active_count">
-                    <div id="datatable_filter" class="dataTables_filter">
-                      <label class="d-flex"
-                        >Search:<input
-                          type="search"
-                          class="form-control form-control-sm searchInp"
-                          placeholder=""
-                          aria-controls="datatable"
-                      /></label>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-sm-4">
-                        <button type="submit" class="btn btn-secondary">
-                          GENERATE
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-12">
-                    <div class="active_count">
-                      <label class="mr-2"
-                        >Total Active Number's Allover Country :</label
-                      >
-                      <label for="">150</label>
-                    </div>
-                    <table
-                      id="datatable"
-                      class="table datatable-style-1"
-                      style="width: 100%"
-                    >
-                      <thead>
-                        <tr>
-                          <th>Sl No</th>
-                          <th>Country Name</th>
-                          <th>Customer Name</th>
-                          <th>Active Tollfree Numbers</th>
-                          <th>Active Virtual Numbers</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>India</td>
-                          <td>Anish De</td>
-                          <td>30</td>
-                          <td>20</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Austria</td>
-                          <td>Rahul</td>
-                          <td>25</td>
-                          <td>25</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Bangladesh</td>
-                          <td>Adrija Khan</td>
-                          <td>10</td>
-                          <td>20</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-           
-            <div class="col-md-6">
-              <div class="card">
-                <div class="row page-wrapper-topbar align-items-center">
-                  <div class="col col-md-12">
-                    <ol class="breadcrumb borderLine">
-                      <li class="breadcrumb-item custo-size">
-                        Country &amp; Customer wise Tollfree and Virtual Numbers
-                      </li>
-                    </ol>
-                    <button class="refreshBtn">
-                      <i class="fas fa-sync-alt"></i>
-                    </button>
-                    <div class="col-md-12 borderLine">
-                      <div class="row">
-                        <div class="redioOption">
-                          <div class="selectItem">
-                            <span class="redioName form-control-sm nowrap"
-                              >Select all</span
-                            >
-                            <input
-                              type="radio"
-                              id="html"
-                              name="countryOptions"
-                              value=""
-                            />
-                          </div>
-                          
-                          <div class="selectItem">
-                            <span class="redioName form-control-sm"
-                              >Tollfree</span
-                            >
-                            <input
-                              type="radio"
-                              id="html"
-                              name="countryOptions"
-                              value=""
-                            />
-                          </div>
-                          <div class="selectItem">
-                            <span class="redioName form-control-sm"
-                              >Virtual</span
-                            >
-                            <input
-                              type="radio"
-                              id="html"
-                              name="countryOptions"
-                              value=""
-                            />
-                          </div>
-                          <div class="selectItem form-control-sm">
-                            <span class="redioName"
-                              >Status</span
-                            >
-                            <input
-                              type="radio"
-                              id="html"
-                              name="countryOptions"
-                              value=""
-                            />
-                            <select class="selectorBox pr-1 form-control-sm ml-1">
-                              <option value="">Active</option>
-                              <option value="">Deactive</option>
-                              <option value="">Waiting for KYC</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="selectOptionDiv">
-                            <div class="selectOption">
-                              <span class="redioName form-control-sm"
-                                >Customer</span
-                              >
-                              <input
-                                type="radio"
-                                id="html"
-                                name="countryOptions"
-                                value=""
-                              />
-                              <select
-                                class="selectorBox pr-1 form-control-sm ml-1"
-                              >
-                              <option value="1">Anish De</option>
-                              <option value="2">Rahul</option>
-                              <option value="3">Adrija Khan</option>
-                            </select>
-                            </div>
-                          <!-- </div>
-                          <div class="selectOptionDiv"> -->
-                            <div class="selectOption">
-                              <span class="redioName form-control-sm"
-                                >Country</span
-                              >
-                              <input
-                                type="radio"
-                                id="html"
-                                name="countryOptions"
-                                value=""
-                              />
-                              <select
-                                class="selectorBox pr-1 form-control-sm ml-1"
-                              >
-                              <option value="1">India</option>
-                              <option value="2">Austria</option>
-                              <option value="3">Bangladesh</option>
-                            </select>
-                            </div>
-                          </div>
-                        </div>                        
-                      </div>
-                    </div>
-                  </div>
+                <!-- <ul class="flex-container nav nav-pills nav-fill">
+                  <li class="flex-item nav-item"><input id="radio1" type="radio" name="radio" checked><label for="radio1">View All</label></li>
+                  <li class="flex-item nav-item"><input id="radio2" type="radio" name="radio"><label for="radio2">Tollfree</label></li>
+                  <li class="flex-item nav-item"><input id="radio3" type="radio" name="radio"><label for="radio3">Virtual</label></li>            
+                </ul> -->
+                <div class="card-header pb-2">
+                  <h6 class="card-title">Country &amp; Customer wise Tollfree and Virtual Numbers</h6>
+                  <ul class="flex-container nav nav-pills nav-fill">
+                    <li class="flex-item nav-item"><input id="radio1" type="radio" name="radio" checked><label for="radio1">View All</label></li>
+                    <li class="flex-item nav-item"><input id="radio2" type="radio" name="radio"><label for="radio2">Tollfree</label></li>
+                    <li class="flex-item nav-item"><input id="radio3" type="radio" name="radio"><label for="radio3">Virtual</label></li>            
+                  </ul>
 
-                  <div class="col-sm-6 col-md-12 borderLine active_count">
-                    <div
-                      id="datatable_filter"
-                      class="dataTables_filter col-md-6"
-                    >
-                      <label class="d-flex"
-                        >Search:<input
-                          type="search"
-                          class="form-control form-control-sm searchInp w-25"
-                          placeholder=""
-                          aria-controls="datatable"
-                      /></label>
+                  <ul class="flex-container nav nav-pills nav-fill">
+                    <li class="flex-item nav-item"><input id="radio4" type="radio" name="Status" checked><label for="radio4" class="lblActive">Active</label></li>
+                    <li class="flex-item nav-item"><input id="radio5" type="radio" name="Status"><label for="radio5" class="lblDeActive">Deactive</label></li>
+                    <li class="flex-item nav-item"><input id="radio6" type="radio" name="Status"><label for="radio6" class="lblWaitKyc">Waiting for KYC</label></li>           
+                  </ul>
+                  <!-- <div class="d-flex bd-highlight flex-wrap">
+                    <div class="p-2 bd-highlight">Select Status</div>
+                    <div class="p-2 bd-highlight"> 
+                      <select class="ml-2 selectorBox form-select form-select-sm">
+                        <option value="1">1999</option>
+                        <option value="2">2020</option>
+                        <option value="3" selected>2021</option>
+                      </select>
                     </div>
-                    <div class="row justify-content-end col-md-6">
-                      <div class="form-group col-sm-4">
-                        <button type="submit" class="btn btn-secondary">
-                          GENERATE
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                  </div> -->
                 </div>
-                <div class="row">
+                
+                <div class="card-body p-1">
                   <div class="col-xl-12">
                     <table
                       id="datatable"

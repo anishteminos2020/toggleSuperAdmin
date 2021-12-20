@@ -61,3 +61,86 @@ table tr td{
   display: flex;
   align-items: center;
 }
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.longhand {
+  flex-flow: wrap row;
+}
+.flex-item {
+  color: #C3D0D9;
+  // border: 1px solid #C3D0D9;
+  // width: 50px;
+  height: 50px;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 10px;
+}
+label {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input:checked + label {
+  background: rgb(7, 165, 238);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+
+input:hover + label {
+  background: rgb(4, 87, 126);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+
+input:checked + .lblActive {
+  background: rgb(4, 146, 11);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+input:hover + .lblActive {
+  background: rgb(2, 95, 80);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+input:checked + .lblDeActive {
+  background: rgb(212, 63, 4);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+input:hover + .lblDeActive {
+  background: rgb(189, 4, 4);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+
+input:checked + .lblWaitKyc {
+  background: rgb(226, 211, 5);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+input:hover + .lblWaitKyc {
+  background: rgb(219, 198, 4);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+input {
+  display: none;
+}
+.redio
+{
+  display: block;
+}
