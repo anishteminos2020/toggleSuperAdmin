@@ -21,6 +21,11 @@ const routes: Routes = [
     loadChildren: "./modules/plan-mgmt/plan-mgmt.module#PlanMgmtModule",
   },
   {
+    path: "ticket-list-and-support",
+    loadChildren:
+      "./modules/ticket-list-and-support/ticket-list-and-support.module#TicketListAndSupportModule",
+  },
+  {
     path: "billing-and-payment-mgmt",
     loadChildren:
       "./modules/billing-and-payment-mgmt/billing-and-payment-mgmt.module#BillingAndPaymentMgmtRoutingModule",

@@ -8,10 +8,11 @@ import { SlaCreationListComponent } from './sla-creation-list/sla-creation-list.
 import { ViewSlaCreationListComponent } from './view-sla-creation-list/view-sla-creation-list.component';
 import { ClosedTicketListComponent } from './closed-ticket-list/closed-ticket-list.component';
 import { ViewClosedTicketListComponent } from './view-closed-ticket-list/view-closed-ticket-list.component';
+import { TicketListAndSupportComponent } from './ticket-list-and-support/ticket-list-and-support.component';
 
 
 @NgModule({
-  declarations: [CreateOpenTicketListComponent, ViewOpenTicketListComponent, SlaCreationListComponent, ViewSlaCreationListComponent, ClosedTicketListComponent, ViewClosedTicketListComponent],
+  declarations: [CreateOpenTicketListComponent, ViewOpenTicketListComponent, SlaCreationListComponent, ViewSlaCreationListComponent, ClosedTicketListComponent, ViewClosedTicketListComponent, TicketListAndSupportComponent],
   imports: [
     CommonModule,
     TicketListAndSupportRoutingModule
